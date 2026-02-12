@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>🏝️ Animal Crossing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== MENU SCREEN ========== -->
+  <div id="screen-menu" class="screen active">
+    <div class="menu-clouds"></div>
+    <div class="menu-content">
+      <img src="SVGs/newhorizons-01.svg" alt="Animal Crossing" class="menu-island">
+      <div class="menu-title-area">
+        <h1 class="menu-title">Animal Crossing</h1>
+        <h2 class="menu-subtitle">Valentine's Day Edition</h2>
+      </div>
+      <button class="btn-continue" id="btn-continue">
+        <span class="btn-arrow">▶</span> Continuar
+      </button>
+    </div>
+  </div>
+
+  <!-- ========== PHONE SCREEN ========== -->
+  <div id="screen-phone" class="screen">
+    <div class="phone-container">
+      <div class="phone-frame" id="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-status">
+          <span class="phone-time" id="phone-time">12:00</span>
+        </div>
+        <div class="phone-grid">
+          <!-- Row 1 -->
+          <div class="app-slot">
+            <img src="SVGs/Apps-0.svg" alt="Camera" class="app-icon">
+          </div>
+          <div class="app-slot">
+            <img src="SVGs/Apps-1.svg" alt="Island" class="app-icon">
+          </div>
+          <!-- Row 2 -->
+          <div class="app-slot">
+            <img src="SVGs/Apps-2.svg" alt="Critters" class="app-icon">
+          </div>
+          <div class="app-slot" id="app-messages">
+            <div class="app-icon-wrapper bounce">
+              <img src="SVGs/messages new.svg" alt="Messages" class="app-icon">
+              <div class="notification-badge">1</div>
+            </div>
+          </div>
+          <!-- Row 3 -->
+          <div class="app-slot">
+            <img src="SVGs/Apps-3.svg" alt="Passport" class="app-icon">
+          </div>
+          <div class="app-slot">
+            <img src="SVGs/Apps-4.svg" alt="Shopping" class="app-icon">
+          </div>
+          <!-- Row 4 -->
+          <div class="app-slot">
+            <img src="SVGs/Apps-6.svg" alt="Designs" class="app-icon">
+          </div>
+          <div class="app-slot">
+            <img src="SVGs/Apps-7.svg" alt="Map" class="app-icon">
+          </div>
+        </div>
+        <!-- Chat view (shown when Messages is tapped) -->
+        <div class="phone-chat" id="phone-chat">
+          <div class="chat-header">
+            <button class="chat-back" id="btn-chat-back">◀</button>
+            <span class="chat-header-title">Mensajes</span>
+          </div>
+          <div class="chat-messages" id="chat-messages"></div>
+          <div class="chat-options" id="chat-options"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
